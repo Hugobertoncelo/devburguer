@@ -58,7 +58,7 @@ export const Title = styled.h2`
    color: #ffff;
 
    span {
-    color: #9758A6;
+    color: ${(props) => props.theme.purple};
     font-family: "Road Rage", sans-serif;
    }
 `;

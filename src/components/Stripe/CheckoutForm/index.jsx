@@ -7,7 +7,7 @@ import { useState } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import '../../Stripe/styles.css';
 import { useCart } from '../../../hooks/CartContext';
-import api from '../../../services/api';
+import { api } from '../../../services/api';
 import { toast } from 'react-toastify';
 
 export function CheckoutForm() {
