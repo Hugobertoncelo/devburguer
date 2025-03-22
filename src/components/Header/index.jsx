@@ -41,7 +41,7 @@ export function Header() {
         </Navigation>
         <Options>
           <Profile>
-            <UserCircle color="#ffff" size={24} />
+            <UserCircle color="#fff" size={24} />
             <div>
               <p>
                 Olá, <span>{userInfo.name}</span>
@@ -50,7 +50,7 @@ export function Header() {
             </div>
           </Profile>
           <LinkContainer>
-            <ShoppingCart color="#ffff" size={24} />
+            <ShoppingCart color="#fff" size={24} />
             <HeaderLink to={'/carrinho'}>Carrinho</HeaderLink>
           </LinkContainer>
         </Options>

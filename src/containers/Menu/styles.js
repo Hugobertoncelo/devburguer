@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 export const Container = styled.div`
   width: 100%;
   min-height: 100vh;
-  background-color: #f0f0f0;
+  background-color: ${(props) => props.theme.secondWhite};
 
   background: linear-gradient(
       rgba(255,255,255, 0.5),
@@ -25,7 +25,7 @@ export const Banner = styled.div`
   position: relative;
 
   background: url('${BannerHamburguer}') no-repeat;
-  background-color: #1f1f1f;
+  background-color: ${(props) => props.theme.mainBlack};
   background-position: center;
   background-size: cover;
 
@@ -33,7 +33,7 @@ export const Banner = styled.div`
     font-family: "Road Rage", sans-serif;
     font-size: 80px;
     line-height: 65px;
-    color: #ffff;
+    color: ${(props) => props.theme.white};
     position: absolute;
 
     right: 20%;
@@ -41,7 +41,7 @@ export const Banner = styled.div`
 
     span {
       display: block;
-      color: #ffff;
+      color: ${(props) => props.theme.white};
       font-size: 20px;
     }
   }
